@@ -24,8 +24,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SPLIT_USB_DETECT
 #define SPLIT_USB_TIMEOUT 2000
 
-#define QUICK_TAP_TERM 0
-#define TAPPING_TERM 100
+// ---- Fix stuck Ctrl / stuck keys on fast chords ----
+#define TAPPING_TERM 180
+#define PERMISSIVE_HOLD
+#define IGNORE_MOD_TAP_INTERRUPT
 
 #undef RGBLIGHT_LED_COUNT
 #define RGBLIGHT_EFFECT_BREATHING
